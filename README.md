@@ -38,6 +38,32 @@ cp .env.example .env
 
 Then update to your own private key.
 
+## For Aptos Testing
+
+Build contracts
+
+```bash
+npm run build-aptos
+```
+
+```bash
+node scripts/createLocal
+```
+
+If aptos is not initialized then rerun the previous code.
+
+Deploy:
+
+```bash
+node scripts/deploy examples/aptos-call-contract local
+```
+
+Run the test:
+
+```bash
+node scripts/test examples/aptos-call-contract local
+```
+
 ## Deploy and test each example
 
 In order to run the examples against the local emulator, cd to `axelar-local-gmp-examples` and run
